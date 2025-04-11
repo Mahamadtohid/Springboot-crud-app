@@ -1,0 +1,23 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Boot</title>
+  </head>
+  <body>
+
+    <h1>Spring Boot Application</h1>
+    <p>Welcome to the Spring Boot application!</p>
+    <p>Click the button below to see a message.</p>
+    <button id="messageButton">Show Message</button>
+    <p id="message" style="display:none;">Hello, this is a message from the server!</p>
+
+    <script>
+      document.getElementById('messageButton').addEventListener('click', function() {
+        document.getElementById('message').style.display = 'block';
+      });
+    </script>
+    
+  </body>
+  </html>
